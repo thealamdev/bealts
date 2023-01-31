@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Roboto+Slab:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Oswald:wght@400;500;600;700&family=Roboto+Slab:wght@300;400;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* =========================== header css start ====================== */
+
+
+#header {
+    background: #0872b9;
+    padding: 10px 0;
+}
+
+.header_main {
+    display: flex;
+}
+
+.header_text {
+    width: 30%;
+
+}
+
+.header_text h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #e7e7e7;
+
+
+}
+
+.header_icon {
+    width: 70%;
+    text-align: right;
+
+
+}
+
+.header_icon i {
+    padding-left: 15px;
+    color: #e7e7e7;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.header_icon i:hover {
+    color: #353535;
+}
+
+/* =========================== nav style start======================= */
+
+.menu_main {
+    display: flex;
+}
+
+.menu_logo {
+    width: 20%;
+
+
+}
+
+.menu_logo img {
+    padding-top: 20px;
+}
+
+.menu_nav {
+    width: 80%;
+    text-align: right;
+    line-height: 80px;
+
+
+}
+
+.menu_nav ul li {
+    display: inline-block;
+
+}
+
+.menu_nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #353535;
+    padding-left: 15px;
+    transition: 0.4s;
+}
+
+.menu_nav ul li a:hover {
+    color: #0872b9;
+}
+
+/* =========================== banner part start ===================== */
+
+#banner_part {
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner_part::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner_text {
+    text-align: right;
+}
+
+.banner_text h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #ffff;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.banner_text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffff;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.banner_text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #ffff;
+    font-weight: 400;
+    padding-left: 500px;
+}
+
+.banner_text a {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffff;
+    text-transform: uppercase;
+    line-height: 24px;
+    transition: 0.3s;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.banner_text a:hover {
+    background: #0872b9;
+    border: 1px solid #0872b9;
+}
+
+/* ============================== about part start ========================== */
+
+#about_part {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.common_head {
+    display: flex;
+    justify-content: center;
+}
+
+.common_head h2 {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 24px;
+    position: relative;
+
+}
+
+.common_head h2:after {
+    position: absolute;
+    content: '';
+    top: 27px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0872b9;
+    transition: 0.4s;
+
+}
+
+.common_head h2:hover::after {
+    width: 100%;
+}
+
+.about_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_img {
+    margin-top: 60px;
+    width: 382px;
+
+}
+
+.about_img img {
+    width: 100%;
+}
+
+.about_txt {
+    width: 537px;
+    margin-top: 90px;
+
+}
+
+.about_txt p {
+    padding-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #555555;
+    font-weight: 400;
+
+}
+
+/* ===================== service part start ==================== */
+
+#service_part {
+    margin-bottom: 55px;
+}
+
+.service_main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+.service_item {
+    width: 300px;
+    background: #f1f1f1;
+    text-align: center;
+    position: relative;
+    transition: 0.4s;
+}
+
+.service_item:hover {
+    box-shadow: 2px 2px 6px 2px rgba(0, 0, 0, 0.2);
+}
+
+.service_item h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    color: #353535;
+    padding-top: 50px;
+}
+
+.service_item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: #555555;
+    font-weight: 400;
+    padding: 20px;
+
+}
+
+.service_icon {
+    width: 68px;
+    height: 68px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    top: -34px;
+    ;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid white;
+    line-height: 68px;
+    text-align: center;
+    transition: 0.4s;
+
+}
+
+.service_icon::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    top: -3px;
+    left: -3px;
+
+}
+
+.service_item:hover .service_icon {
+    background: #0872b9;
+}
+
+.service_item:hover::after {
+    border: 2px solid #0872b9;
+}
+
+/* =========================== portfolios part start ========================= */
+
+
+.portfolio_main {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio_item {
+    width: 220px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.356);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.item1 {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.item1:hover .overlay {
+    opacity: 1;
+}
+
+
+.item1 img {
+    width: 100%;
+}
+
+
+.overlay_icon {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #0872b9;
+    text-align: center;
+    line-height: 43px;
+}
+
+/* ========================= team part start ====================== */
+
+#team_part {
+    margin-bottom: 60px;
+}
+
+.team_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_item {
+    margin-top: 30px;
+    width: 220px;
+
+}
+
+.team_img {
+    width: 220px;
+    height: 270px;
+    position: relative;
+}
+
+.team_img img {
+    width: 100%;
+}
+
+.team_overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.team_overlay i {
+    display: block;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.team_overlay i:hover {
+    background: #0872b9;
+    border: 2px solid #0872b9;
+}
+
+.team_item:hover .team_overlay {
+    opacity: 1;
+}
+
+.team_item:hover .team_text h2 {
+    color: #0872b9;
+}
+
+.team_item:hover {
+    box-shadow: -1px -1px 2px 2px gray;
+}
+
+
+.team_text {
+    text-align: center;
+}
+
+.team_text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    color: #353535;
+    text-transform: uppercase;
+}
+
+.team_text p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 14px;
+    color: #555555;
+    text-transform: capitalize;
+}
+
+/* ================================= testimonial part start ============================= */
+
+#testimonial {
+    margin-bottom: 60px;
+}
+
+.testimonial_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-item {
+    width: 460px;
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+.testi_text {
+    margin-top: 40px;
+    background: #f1f1f1;
+    position: relative;
+}
+
+.testi_text::after {
+    position: absolute;
+    content: '';
+    top: -20px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.testi_text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    color: #353535;
+    padding-top: 20px;
+}
+
+.testi_icon {
+    color: #0872b9;
+    padding-top: 5px;
+}
+
+.testi_text h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 13px;
+    color: #555555;
+
+}
+
+.testi_text p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 13px;
+    color: #555555;
+    padding: 15px;
+}
+
+/* ======================= footer part start ============================ */
+
+#footer {
+    background: #353535;
+}
+
+.footer_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_item1 {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer_item2 {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer_item1_left {
+    width: 220px;
+    padding-top: 20px;
+}
+
+.footer_item1_left p {
+    padding: 30px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+    font-weight: 400;
+
+
+}
+
+
+.footer_item1_left h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+    font-weight: 400;
+
+
+}
+
+.footer_item1_right {
+    width: 220px;
+}
+
+.common-text {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.common-text h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    color: white;
+
+}
+
+.contact_list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact_icon {
+    width: 40px;
+    height: 40px;
+    background: #0872b9;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+}
+
+.contact_number {
+    width: 170px;
+    color: white;
+}
+
+.contact_number p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+    font-weight: 400;
+
+}
+
+.footer_item2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_item_left {
+    width: 150px;
+}
+
+.footer_item_right {
+    width: 300px;
+}
+
+.footer_photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.footer_photo img {
+    padding-bottom: 10px;
+}
+
+.footer_link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_left {
+    width: 70px;
+}
+
+.link_right {
+    width: 60px;
+}
+
+.footer_link ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 36px;
+    font-size: 13px;
+    color: white;
+}
+
+/* ==================== last part ================ */
+#last {
+    background: rgb(116, 113, 113);
+    padding: 10px 0;
+}
+
+.text {
+    text-align: center;
+
+}
+
+.text h2 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 13px;
+    color: white;
+}
+
+span {
+    color: #0872b9;
+}
+
+/* =================== preloader =================== */
+
+.preloader{
+    background: #fff url(../images/loader.gif) no-repeat center;
+    width:100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+/* ===================================== end of code =================================== */
